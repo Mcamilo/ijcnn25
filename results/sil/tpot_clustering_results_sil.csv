@@ -1,0 +1,8 @@
+Dataset,Best_Pipeline,silhouette_score,davies_bouldin_score,calinski_harabasz_score,adjusted_rand_score,Running_Time(s)
+cluto-t7-10k.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+segment.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+aggregation.csv,"Pipeline(steps=[('minmaxscaler', MinMaxScaler()),
+                ('kmeans',
+                 KMeans(init='random', n_clusters=2, random_state=42))])",0.432124483976979,1.0628943750307545,574.7318639754577,0.4214129427823257,60.14
+tae.csv,"Pipeline(steps=[('variancethreshold', VarianceThreshold(threshold=0.1)),
+                ('kmeans', KMeans(n_clusters=14, random_state=42))])",0.5147369191027232,0.7441577137334159,79.75468139186147,0.04205144462130494,60.1
