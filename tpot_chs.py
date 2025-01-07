@@ -90,7 +90,7 @@ for dataset_name in os.listdir(validation_folder):
             random_state=random_state,
             crossover_rate=0.05,
             mutation_rate=0.9,
-            max_time_mins=1,
+            max_time_mins=30,
             max_eval_time_mins=1.0,
             scoring="calinski_harabasz_score"
         )
