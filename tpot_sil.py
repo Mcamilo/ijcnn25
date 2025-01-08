@@ -96,7 +96,7 @@ for dataset_name in os.listdir(validation_folder):
         )
 
         tpot_clustering.fit(X_scaled)
-        labels = tpot_clustering.predict(X_scaled)
+        labels = tpot_clustering.fitted_pipeline_[-1].labels_
 
         # Save labels to CSV for comparison
         labels_df = pd.DataFrame(labels, columns=["Cluster_Label"])
@@ -112,7 +112,7 @@ for dataset_name in os.listdir(validation_folder):
         # Save results
         results = pd.DataFrame({
             "Dataset": [dataset_name],
-            "Best_Pipeline": [str(tpot_clustering.fitted_pipeline_)],
+            "Best_Pipeline": [tpot_clustering.fitted_pipeline_.named_steps],
             "silhouette_score": [sil],
             "davies_bouldin_score": [dbs],
             "calinski_harabasz_score": [chs],
