@@ -1,0 +1,37 @@
+Dataset,Best_Pipeline,silhouette_score,davies_bouldin_score,calinski_harabasz_score,adjusted_rand_score,Running_Time(s)
+iono.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+cluto-t7-10k.csv,"Pipeline(steps=[('kmeans', KMeans(n_clusters=4, random_state=42))])",0.4613108763156968,0.7160133570791971,12091.500451045948,0.4063365212301307,1802.46
+glass.csv,"Pipeline(steps=[('featureunion',
+                 FeatureUnion(transformer_list=[('functiontransformer-1',
+                                                 FunctionTransformer(func=<function copy at 0x7fb892e5eb90>)),
+                                                ('functiontransformer-2',
+                                                 FunctionTransformer(func=<function copy at 0x7fb892e5eb90>))])),
+                ('stackingestimator',
+                 StackingEstimator(estimator=KMeans(n_clusters=2,
+                                                    random_state=42))),
+                ('kmeans', KMeans(n_clusters=22, random_state=42))])",0.24908147362645414,0.8864306269564423,68.24129433196457,0.1809559877966614,648.33
+sonar.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+haberman.csv,"Pipeline(steps=[('stackingestimator',
+                 StackingEstimator(estimator=KMeans(n_clusters=10,
+                                                    random_state=42))),
+                ('kmeans', KMeans(n_clusters=22, random_state=42))])",0.2292375237552337,1.1708545676336823,111.4757539413877,0.008498838679529332,878.33
+jain.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+tae.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+thy.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+sizes2.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+3-spiral.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+compound.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+R15.csv,"Pipeline(steps=[('kmeans', KMeans(n_clusters=3, random_state=42))])",0.32833168806201474,1.0053455894633263,331.6707253895563,0.21676673364062563,1801.5
+sizes4.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+segment.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+ecoli.csv,"Pipeline(steps=[('stackingestimator',
+                 StackingEstimator(estimator=KMeans(n_clusters=17,
+                                                    random_state=42))),
+                ('kmeans', KMeans(n_clusters=22, random_state=42))])",0.16778048705001783,1.240415214605874,95.93970605898124,0.22429266698605688,368.72
+iris.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+cluto-t8-8k.csv,"Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('kmeans',
+                 KMeans(init='random', n_clusters=15, random_state=42))])",0.41719256164631985,0.7505837327957369,10184.764597957272,0.4186146134645757,1926.1
+arrhythmia.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+aggregation.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+pathbased.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0

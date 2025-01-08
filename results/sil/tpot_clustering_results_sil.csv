@@ -6,3 +6,43 @@ aggregation.csv,"Pipeline(steps=[('minmaxscaler', MinMaxScaler()),
                  KMeans(init='random', n_clusters=2, random_state=42))])",0.432124483976979,1.0628943750307545,574.7318639754577,0.4214129427823257,60.14
 tae.csv,"Pipeline(steps=[('variancethreshold', VarianceThreshold(threshold=0.1)),
                 ('kmeans', KMeans(n_clusters=14, random_state=42))])",0.5147369191027232,0.7441577137334159,79.75468139186147,0.04205144462130494,60.1
+iono.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+glass.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+sonar.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+haberman.csv,"Pipeline(steps=[('kmeans',
+                 KMeans(init='random', n_clusters=2, random_state=42))])",0.38688127897445596,1.015865595495017,238.5532054027092,-0.0039785222672944,376.77
+jain.csv,"Pipeline(steps=[('featureunion',
+                 FeatureUnion(transformer_list=[('minmaxscaler',
+                                                 MinMaxScaler()),
+                                                ('functiontransformer',
+                                                 FunctionTransformer(func=<function copy at 0x7f6cda27eb90>))])),
+                ('minibatchkmeans',
+                 MiniBatchKMeans(batch_size=50, n_clusters=2,
+                                 random_state=42))])",0.5079255829867521,0.7867236591134331,495.79311430143906,0.552751161834573,598.13
+thy.csv,"Pipeline(steps=[('featureunion',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('normalizer',
+                                                                                 Normalizer(norm='l1')),
+                                                                                ('functiontransformer',
+                                                                                 FunctionTransformer(func=<function copy at 0x7f6cda27eb90>))])),
+                                                ('functiontransformer',
+                                                 FunctionTransformer(func=<function copy at 0x7f6cda27eb90>))])),
+                ('kmeans',
+                 KMeans(init='random', n_clusters=2, random_state=42))])",0.5590911078506684,0.7498889721104606,110.7151254043308,0.33802850813546115,887.26
+sizes2.csv,"Pipeline(steps=[('kmeans',
+                 KMeans(init='random', n_clusters=2, random_state=42))])",0.5004420337524378,0.9090228625451524,897.4107782741999,0.6008421531006234,1810.59
+3-spiral.csv,"Pipeline(steps=[('kmeans',
+                 KMeans(init='random', n_clusters=4, random_state=42))])",0.3539792004319383,0.8797438938265115,245.53646472364227,-0.00585938320784209,737.12
+compound.csv,"Pipeline(steps=[('kmeans',
+                 KMeans(init='random', n_clusters=2, random_state=42))])",0.5045842668053825,0.814330374952809,444.15364280766005,0.4680972594380504,1806.63
+R15.csv,"Pipeline(steps=[('kmeans', KMeans(n_clusters=3, random_state=42))])",0.32833168806201474,1.0053455894633263,331.6707253895563,0.21676673364062563,1800.85
+sizes4.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+ecoli.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+iris.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+cluto-t8-8k.csv,"Pipeline(steps=[('standardscaler-1', StandardScaler()),
+                ('standardscaler-2', StandardScaler()),
+                ('minibatchkmeans',
+                 MiniBatchKMeans(batch_size=50, n_clusters=4,
+                                 random_state=42))])",0.4263981686277232,0.7767621161028795,8488.691335626294,0.32766758843678556,1807.48
+arrhythmia.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
+pathbased.csv,ERROR,ERROR,ERROR,ERROR,ERROR,0
