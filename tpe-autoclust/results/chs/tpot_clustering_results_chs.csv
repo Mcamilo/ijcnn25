@@ -1,0 +1,29 @@
+Dataset,Best_Pipeline,silhouette_score,davies_bouldin_score,calinski_harabasz_score,adjusted_rand_score,Running_Time(s)
+iono.csv,"{'minmaxscaler': MinMaxScaler(), 'kmeans': KMeans(init='random', n_clusters=2, random_state=42)}",0.29341541039789293,1.5350242035246608,115.0360225908912,0.17760685473768603,1802.17
+cluto-t7-10k.csv,"{'kmeans': KMeans(n_clusters=21, random_state=42)}",0.403245248664998,0.7723317930879655,12374.480362657076,0.3037205248900848,1975.92
+glass.csv,"{'stackingestimator': StackingEstimator(estimator=KMeans(n_clusters=4, random_state=42)), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.27255949119284517,0.862211761236744,67.97732509326806,0.13387806892939227,463.22
+sonar.csv,"{'pca': PCA(n_components=10, random_state=42), 'kmeans': KMeans(init='random', n_clusters=3, random_state=42)}",0.15901239502019868,1.8233691408382178,41.748576144184476,0.001587370680923526,1769.69
+haberman.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)},0.2824913071425205,0.9069364040008542,128.28916940898802,0.008472530529558228,338.98
+jain.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)},0.4212160391679111,0.7077617418662833,935.149242750326,0.07268174029404961,599.51
+tae.csv,"{'stackingestimator': StackingEstimator(estimator=MiniBatchKMeans(batch_size=50, n_clusters=12,
+                                            random_state=42)), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.5128930594829965,0.5426516240709895,121.68307688091896,0.0300826595439254,426.14
+thy.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)},0.2606022272597288,0.8924112795413012,108.75459186493177,0.14041451638048574,659.5
+sizes2.csv,"{'kmeans': KMeans(init='random', n_clusters=2, random_state=42)}",0.5004420337524378,0.9090228625451524,897.4107782741999,0.6008421531006234,1802.14
+3-spiral.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)},0.38049448789872137,0.7880839553559763,258.55200994558896,0.11702354916275631,598.97
+compound.csv,"{'kmeans': KMeans(init='random', n_clusters=5, random_state=42)}",0.4396608644344171,0.8574021191552171,689.7503697817274,0.5151512173984766,1805.01
+R15.csv,"{'featureunion': FeatureUnion(transformer_list=[('functiontransformer',
+                                FunctionTransformer(func=<function copy at 0x7f24ca762b90>)),
+                               ('stackingestimator',
+                                StackingEstimator(estimator=MiniBatchKMeans(batch_size=10,
+                                                                            n_clusters=3,
+                                                                            random_state=42)))]), 'minibatchkmeans': MiniBatchKMeans(batch_size=50, n_clusters=3, random_state=42)}",0.34413895521514026,1.1260978025514763,271.7256125452807,0.14521490754908642,1801.22
+sizes4.csv,"{'kmeans': KMeans(init='random', n_clusters=3, random_state=42)}",0.5530849307971816,0.7391351129609554,975.9578486971103,0.9035083430351392,1803.2
+segment.csv,"{'kmeans': KMeans(init='random', n_clusters=4, random_state=42)}",0.38318511251053966,1.0306299633959222,1843.721957840404,0.4812040992919252,1803.28
+ecoli.csv,"{'featureunion': FeatureUnion(transformer_list=[('pca', PCA(n_components=3, random_state=42)),
+                               ('functiontransformer',
+                                FunctionTransformer(func=<function copy at 0x7f24ca762b90>))]), 'kmeans': KMeans(init='random', n_clusters=2, random_state=42)}",0.36935133304466,1.1009566434164948,171.14824532034464,0.3857123861793427,1843.83
+iris.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)},0.29967874874326367,0.9331757559311225,196.8714225227235,0.20370629213754593,651.35
+cluto-t8-8k.csv,"{'minmaxscaler': MinMaxScaler(), 'kmeans': KMeans(init='random', n_clusters=17, random_state=42)}",0.40487112079051335,0.8104130852339679,10079.058164349184,0.3850115472808764,1806.6
+arrhythmia.csv,"{'pca': PCA(n_components=5, random_state=42), 'kmeans': KMeans(init='random', n_clusters=2, random_state=42)}",0.08072102430673642,3.3439296745627467,35.45610779648841,0.01810464855476885,1847.5
+aggregation.csv,"{'kmeans': KMeans(init='random', n_clusters=4, random_state=42)}",0.5364563915539369,0.5549032395565547,1214.8987767920871,0.7622852332885822,1802.62
+pathbased.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)},0.3983173595344753,0.6921971478220859,423.6536953324538,0.1961382417568918,1491.97
