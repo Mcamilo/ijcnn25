@@ -1,0 +1,2 @@
+nohup: ignoring input
+python: can't open file '/home/matheus/dev/ijcnn25/datasets/validation_csv/tpot_chs.py': [Errno 2] No such file or directory
