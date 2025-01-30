@@ -13,7 +13,7 @@ import warnings
 # Configuration
 scoring_metric = "poac_sv7"
 validation_folder = "datasets/validation_csv"
-results_file = f"results/{scoring_metric}/tpot_clustering_results_sv7.csv"
+results_file = f"results/{scoring_metric}/experiment_summary.csv"
 output_folder = f"results/{scoring_metric}"
 labels_folder = f"results/{scoring_metric}/labels"
 population_size = 50

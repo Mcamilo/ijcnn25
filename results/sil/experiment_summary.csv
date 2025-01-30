@@ -26,7 +26,6 @@ sizes2.csv,"{'featureunion': FeatureUnion(transformer_list=[('minmaxscaler', Min
                                 FunctionTransformer(func=<function copy at 0x7f5522f76b90>))]), 'kmeans': KMeans(init='random', n_clusters=2, random_state=42)}",0.5004420337524378,0.9090228625451524,897.4107782741999,0.6008421531006234,1800.54,False,2
 3-spiral.csv,"{'kmeans': KMeans(init='random', n_clusters=4, random_state=42)}",0.3539792004319383,0.8797438938265115,245.53646472364227,-0.005859383207842,1204.43,False,1
 compound.csv,"{'kmeans': KMeans(init='random', n_clusters=2, random_state=42)}",0.5045842668053825,0.814330374952809,444.1536428076601,0.4680972594380504,1026.24,False,1
-wine.csv,"{'pca': PCA(n_components=2, random_state=42), 'standardscaler': StandardScaler(), 'kmeans': KMeans(n_clusters=2, random_state=42)}",0.3868945897323537,0.9757386669013448,121.3715191810873,0.0003203592360166,681.02,False,3
 elliptical_10_2.csv,{'agglomerativeclustering': AgglomerativeClustering()},0.4448562499889911,0.8734782139120497,535.2448731612575,0.1835472152865231,1807.57,False,1
 sizes4.csv,"{'dbscan': DBSCAN(eps=0.1, leaf_size=3, min_samples=25)}",0.5059520186692147,2.2141542022960192,261.90063010660253,0.4110256718434377,1823.41,False,1
 segment.csv,{'agglomerativeclustering': AgglomerativeClustering()},0.4919003677700715,0.6441980942418775,1748.801909825485,0.1023248580981261,1874.27,False,1
@@ -41,3 +40,22 @@ fourty.csv,"{'minibatchkmeans': MiniBatchKMeans(batch_size=25, random_state=42)}
 pathbased.csv,"{'minmaxscaler': MinMaxScaler(), 'spectralclustering': SpectralClustering(affinity='nearest_neighbors', eigen_solver='arpack',
                    n_clusters=2, random_state=42)}",0.5123274573274572,0.7588813636488332,364.15020847304544,0.3984715197933473,764.25,False,2
 engytime.csv,"{'dbscan': DBSCAN(eps=0.1, leaf_size=10, min_samples=10)}",0.3790717127838923,0.448368408355236,4.088663191994193,0.0,1813.07,False,1
+wine.csv,"{'featureunion': FeatureUnion(transformer_list=[('fastica',
+                                FastICA(n_components=2, random_state=42)),
+                               ('pipeline',
+                                Pipeline(steps=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('functiontransformer',
+                                                                                 FunctionTransformer(func=<function copy at 0x7ace936de4d0>)),
+                                                                                ('featureunion',
+                                                                                 FeatureUnion(transformer_list=[('featureunion-1',
+                                                                                                                 FeatureUnion(transformer_list=[('featureunion'...
+                                                                                                                 FeatureUnion(transformer_list=[('functiontransformer',
+                                                                                                                                                 FunctionTransformer(func=<function copy at 0x7ace936de4d0>)),
+                                                                                                                                                ('featureunion',
+                                                                                                                                                 FeatureUnion(transformer_list=[('functiontransformer-1',
+                                                                                                                                                                                 FunctionTransformer(func=<function copy at 0x7ace936de4d0>)),
+                                                                                                                                                                                ('functiontransformer-2',
+                                                                                                                                                                                 FunctionTransformer(func=<function copy at 0x7ace936de4d0>))]))]))]))])),
+                                                ('pca',
+                                                 PCA(n_components=2,
+                                                     random_state=42))]))]), 'spectralclustering': SpectralClustering(eigen_solver='lobpcg', n_clusters=2, random_state=42)}",0.29836623579370763,1.2659827001659687,77.74617786908071,0.4610041624800529,1451.09

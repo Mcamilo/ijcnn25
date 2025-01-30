@@ -11,7 +11,7 @@ import time
 # Configuration
 scoring_metric = "chs"
 validation_folder = "datasets/validation_csv"
-results_file = f"results/{scoring_metric}/tpot_clustering_results_chs.csv"
+results_file = f"results/{scoring_metric}/experiment_summary.csv"
 output_folder = f"results/{scoring_metric}"
 labels_folder = f"results/{scoring_metric}/labels"
 population_size = 50

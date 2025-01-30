@@ -19,7 +19,6 @@ twodiamonds.csv,{'agglomerativeclustering': AgglomerativeClustering(n_clusters=2
 sizes2.csv,"{'minmaxscaler': MinMaxScaler(), 'fastica': FastICA(n_components=5, random_state=42), 'agglomerativeclustering': AgglomerativeClustering()}",0.484787136514633,0.9350194336124512,785.9095066957226,0.599752233545345,1804.74,False,3
 3-spiral.csv,"{'spectralclustering': SpectralClustering(eigen_solver='arpack', n_clusters=22, random_state=42)}",0.0515845285203803,1.7244183425756872,69.45326714614549,0.1146016032538051,1809.14,False,1
 compound.csv,{'agglomerativeclustering': AgglomerativeClustering()},0.4954113139990322,0.8083038963250924,419.1309644165833,0.4841271762316797,664.03,False,1
-wine.csv,"{'stackingestimator': StackingEstimator(estimator=KMeans(n_clusters=5, random_state=42)), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.1518310504427376,1.4097773313434367,32.233441575368616,0.0033425666030853,604.7,False,2
 elliptical_10_2.csv,{'agglomerativeclustering': AgglomerativeClustering()},0.4448562499889911,0.8734782139120497,535.2448731612575,0.1835472152865231,1802.99,False,1
 sizes4.csv,"{'featureunion': FeatureUnion(transformer_list=[('functiontransformer-1',
                                 FunctionTransformer(func=<function copy at 0x7fb277682b90>)),
@@ -36,3 +35,19 @@ fourty.csv,"{'minibatchkmeans': MiniBatchKMeans(batch_size=25, random_state=42)}
 pathbased.csv,"{'stackingestimator': StackingEstimator(estimator=MiniBatchKMeans(batch_size=50, n_clusters=17,
                                             random_state=42)), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.3681416004903098,0.7105123691009164,399.92008554502473,0.1786347093603123,935.29,False,2
 engytime.csv,"{'dbscan': DBSCAN(eps=0.1, min_samples=10)}",0.3790717127838923,0.448368408355236,4.088663191994193,0.0,1848.0,False,1
+wine.csv,"{'featureunion': FeatureUnion(transformer_list=[('featureunion',
+                                FeatureUnion(transformer_list=[('stackingestimator',
+                                                                StackingEstimator(estimator=Pipeline(steps=[('featureunion',
+                                                                                                             FeatureUnion(transformer_list=[('functiontransformer-1',
+                                                                                                                                             FunctionTransformer(func=<function copy at 0x74a8bd5364d0>)),
+                                                                                                                                            ('functiontransformer-2',
+                                                                                                                                             FunctionTransformer(func=<function copy at 0x74a8bd5364d0>))])),
+                                                                                                            ('kmeans',
+                                                                                                             KMeans(n_clusters=17))]))),
+                                                               ('featureunion',
+                                                                FeatureUnion(transformer_list=[('functiontransformer-1',
+                                                                                                FunctionTransformer(func=<function copy at 0x74a8bd5364d0>)),
+                                                                                               ('functiontransformer-2',
+                                                                                                FunctionTransformer(func=<function copy at 0x74a8bd5364d0>))]))])),
+                               ('functiontransformer',
+                                FunctionTransformer(func=<function copy at 0x74a8bd5364d0>))]), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.13518937586182647,1.429751666808005,22.94482298330829,0.21916762170101958,392.9
