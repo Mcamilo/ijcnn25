@@ -6,4 +6,3 @@ pymfe==0.4.2
 numpy==2.0.0
 scikit-learn==1.6.0
 joblib==1.2
-git+https://github.com/Mcamilo/tpot_clustering

@@ -50,4 +50,4 @@ wine.csv,"{'featureunion': FeatureUnion(transformer_list=[('featureunion',
                                                                                                ('functiontransformer-2',
                                                                                                 FunctionTransformer(func=<function copy at 0x74a8bd5364d0>))]))])),
                                ('functiontransformer',
-                                FunctionTransformer(func=<function copy at 0x74a8bd5364d0>))]), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.13518937586182647,1.429751666808005,22.94482298330829,0.21916762170101958,392.9
+                                FunctionTransformer(func=<function copy at 0x74a8bd5364d0>))]), 'agglomerativeclustering': AgglomerativeClustering(n_clusters=22)}",0.1351893758618264,1.429751666808005,22.94482298330829,0.2191676217010195,392.9,,2

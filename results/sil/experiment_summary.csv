@@ -58,4 +58,4 @@ wine.csv,"{'featureunion': FeatureUnion(transformer_list=[('fastica',
                                                                                                                                                                                  FunctionTransformer(func=<function copy at 0x7ace936de4d0>))]))]))]))])),
                                                 ('pca',
                                                  PCA(n_components=2,
-                                                     random_state=42))]))]), 'spectralclustering': SpectralClustering(eigen_solver='lobpcg', n_clusters=2, random_state=42)}",0.29836623579370763,1.2659827001659687,77.74617786908071,0.4610041624800529,1451.09
+                                                     random_state=42))]))]), 'spectralclustering': SpectralClustering(eigen_solver='lobpcg', n_clusters=2, random_state=42)}",0.2983662357937076,1.2659827001659687,77.74617786908071,0.4610041624800529,1451.09,,2
